@@ -1,0 +1,20 @@
+1. Alcohol. Because this attribute can maximize the separation of the two species
+2. 62.381%. Because ZeroR is the simplest method, if any other method can not get a better performance than this simplest method, it is no sense.
+3. Alcohol. 
+   Alcohol > 10.8. 
+   Yes, it matched to my answer in Q1
+4. In 10-fold cross validation, the original sample set will randomly divide into 10 equal size subsets. Each time, 9 subsets will consist into the training set while the 10th subset will become the validation set. The 10 results from the folds can then be averaged (or otherwise combined) to produce a single estimation. 
+   If we do not apply cross-validation, it will have over-fitting problem. And applying cross-validation can reduce the overfitting. 
+   The first advantage of this method is that all observations are used for both training and validation, and each observation is used for validation exactly once. Second, it can reduce the over-fitting problem. 
+5. RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+   The accuracy is 90.9524% 
+6. I tried a lot of models and I find that the random forest can get the best accuracy. And I choose 10-fold cross-validation. In the model which I submit, I tuned the iteration number into 200 because this can increase the accuracy. 
+7. My strategy is to try it.
+Classier A: RandomForest. Classifier B: SVM
+RandomForest for wine: 90.582%; for cars: 93.1933%
+SVM for wine: 82.2222%; for cars: 92.9412%
+8. f1, using one-nearest-neighbor to do the classification. I calculated the accuracy of one-nearest-neighbor and three-nearest-neighbor. The accuracy
+of one-nearest-neighbor is higher, which is 80%.
+   f2, using linear regression. By observing the data, we can find it is a linear regression.  
+   f3, using three-nearest-neighbor method. By calculating it, three-nearest-neighbor has higher accuracy, which is 80%.
+   f4, using polynomial regression. By observing the data, we can know it is a quadratic function. 
